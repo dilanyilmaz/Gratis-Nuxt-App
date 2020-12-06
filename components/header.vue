@@ -1,7 +1,7 @@
 <template>
     <div class="header-div">
         <b-row >
-          <b-col cols="3" class="mor-divh"> 
+          <b-col cols="3" class="mor-divh" > 
               <a><img src="../assets/image/teslimat.svg" style="width:30px;padding-right:5px"/></a>
               <a style="color:rgb(190, 49, 131);"><b>99 TL üzeri alışverişe ÜCRETSİZ KARGO fırsatı</b> </a>
 
@@ -50,14 +50,17 @@
 
             <b-col cols="2">
                 <div style="float:left;"> 
-                    <button class="saributon"><strong><nuxt-link to="/Uye">Giriş Yap</nuxt-link></strong><br>
+                    <button class="saributon"><strong><nuxt-link to="/Uye" style="color:rgb(74, 19, 82);">Giriş Yap</nuxt-link></strong><br>
                     <a style="font-size:12px; color:rgb(99, 99, 99);">Üye ol</a></button>
                 </div>
                 <div style="float:left; padding-top:7px; border-right:2px solid gray;"> 
                     <a style="margin-left:15px; margin-right:7px;"><img src="../assets/image/fav.svg" style="width:35px;"></a>
                 </div>
                 <div style="float:left; padding-top:7px"> 
-                    <a style="margin-left:7px;"><img src="../assets/image/sepetim.svg" style="width:35px"></a>
+                    <a style="margin-left:7px;float:left">
+                    <!-- buraya sepet btn u yükleriz-->
+                        <seperbtn/>
+                    </a>
                 </div>
 
             </b-col>
@@ -71,7 +74,9 @@
 </template>
 
 <script>
+import seperbtn from '../components/sepetbtn'
 export default{
+    components:{seperbtn},
     data(){
         return{
             iconimage:[
@@ -224,6 +229,6 @@ export default{
     background-color:yellow;
 }
 .mor-divh{
- background-color: rgb(230, 189, 230);
+ background-color: white;
 }
 </style>

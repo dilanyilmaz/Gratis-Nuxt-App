@@ -4,19 +4,21 @@
             <div style="margin-top:25px;" class="UyeMain">
                 <a style="color:gray; font-size:40px;">Üye Misiniz?</a>
                 <!--_________________________________________________________-->
-                <form style="margin-top:50px;">
+                <form style="margin-top:50px;" class="form" @submit.prevent="addMember">
                     <a style="color:gray; font-size:15px;">E-Posta</a><br>
-                     <input type="text"  class="uye" style="margin-top:10px" placeholder="E-posta adresinizi giriniz."><br><br>
+                     <input type="text"  class="uye" style="margin-top:10px" placeholder="E-posta adresinizi giriniz." v-model="email"><br><br>
                      
                      <a style="color:gray; font-size:15px; ">Şifre</a><br>
-                     <input type="text"  class="uye" style="margin-top:10px" placeholder="Şifrenizi giriniz.">
+                     <input type="text"  class="uye" style="margin-top:10px" placeholder="Şifrenizi giriniz." v-model="sifre">
                     
                     <div style="border-radius:5px;border:1px solid; margin-top:50px;  background-color:rgb(233, 233, 233); width:350px; height:80px">
                         <img src="../assets/image/logo_48.png" style="padding-left:200px;padding-top:15px">
                         <input style="margin-top:35px; margin-left:50px;float:left;" type="checkbox" id="checkbox" v-model="checked" >
                         <label style="float:left; margin-top:-34px;margin-left:70px" for="checkbox">{{msg}}</label>  
                     </div>
-                     <button id="app" class="btnGiris">Giriş Yap ve DEVAM ET{{message}}{{username}}</button>
+                     <button id="app"  type=" submit" class="btnGiris">Giriş Yap ve DEVAM ET</button>
+
+
                 </form>
                 <!--_________________________________________________________-->
             </div>
@@ -64,17 +66,15 @@
     </div>
 </template>
 <script>
-import {mapState} from "vuex";
+import {mapState , mapMutations} from "vuex";
 
 export default {
-    computed:{
-        ...mapState([
-            'message',
-            'username',
-        ]),
-    },
+
     data(){  
         return{  
+            email:"",
+            sifre:"",
+
             sifre:"E-posta adresi zorunludur.",
             uye:"Parola zorunludur.",
             msg:"Ben Robot Değilim",
@@ -96,6 +96,25 @@ export default {
             }
            ]
         }
+    },
+    computed:{
+        ...mapState({
+            members:state => state.members
+        })
+    },
+    methods:{
+        ...mapMutations({
+            addUser:"addUser"
+        }),
+        addMember(){
+            this.addUser({
+                email:this.email,
+                sifre:this.sifre
+            })
+            this.email="";
+            this.sifre="";
+        }
+
     }
 }
 </script>

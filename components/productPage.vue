@@ -4,27 +4,126 @@
         <!--_______İmage divi________-->
         <div class="" style="float:left">
 
-        <div class="base fill" id="beyazEkran"  >
+        <div class="base fill" id="beyazEkran" style="border-width:0px;"  >
         <img class="fk" :src="image" />
         </div>
-        
-        <!--_______minik görüntüler________-->
-        <button @click="changeimage1()" class="base fill" id="beyazEkranmini" style="float:left; margin-left:25px;" >
+        <b-carousel
+      id="carousel-1"
+      v-model="slide"
+      :interval="4000"
+      controls
+
+      background="none"
+
+      style="text-shadow: 1px 1px 2px #333; width:400px; padding-left:5px;"
+    >
+
+          <!--_________________1.SLAYT_____________________________________-->
+       <b-carousel-slide>
+        <template #img>
+           <!--___________________ ürün__________________________-->
+
+          <div style="width:15px; float:left; " class="hover-overlay-container">
+              <button @click="changeimage1()" class="base fill" id="beyazEkranmini" style=" margin-left:35px; border-width:0px;" >
         <img class="fk" :src="image1" />
         </button>
 
-        <button @click="changeimage2()" class="base fill" id="beyazEkranmini" style="float:left"  >
+          </div>
+          <!--______________________________________________________________________________________________________-->
+          <!--___________________ ürün__________________________-->
+
+          <div style="width:15px;  float:left; margin-left:25px; " class="hover-overlay-container">
+             <button @click="changeimage2()" class="base fill" id="beyazEkranmini" style="margin-left:75px; border-width:0px;" >
         <img class="fk" :src="image2" />
         </button>
 
-        <button @click="changeimage3()" class="base fill" id="beyazEkranmini" style="float:left" >
+   
+          </div>
+          <!--______________________________________________________________________________________________________-->
+           <!--___________________ ürün__________________________-->
+
+          <div style="width:15px; float:left; margin-left:45px; ">
+            <button @click="changeimage3()" class="base fill" id="beyazEkranmini" style="margin-left:95px; border-width:0px;" >
+        <img class="fk" :src="image3" />
+        </button>
+          
+          </div>
+          <!--______________________________________________________________________________________________________-->
+          <!--___________________ ürün__________________________-->
+
+          <div style="width:15px; float:left; margin-left:65px; ">
+        <button @click="changeimage4()" class="base fill" id="beyazEkranmini" style=" margin-left:95px; border-width:0px;" >
+        <img class="fk" :src="image4" />
+        </button>
+          
+          </div>
+          <!--______________________________________________________________________________________________________-->   
+         </template>    
+      </b-carousel-slide>
+        <!--_________________2.SLAYT_____________________________________-->
+       <b-carousel-slide>
+        <template #img>
+           <!--___________________ ürün__________________________-->
+
+          <div style="width:15px; float:left; " class="hover-overlay-container">
+              <button @click="changeimage1()" class="base fill" id="beyazEkranmini" style=" margin-left:35px; border-width:0px;" >
+        <img class="fk" :src="image1" />
+        </button>
+
+          </div>
+          <!--______________________________________________________________________________________________________-->
+          <!--___________________ ürün__________________________-->
+
+          <div style="width:15px;  float:left; margin-left:25px; " class="hover-overlay-container">
+             <button @click="changeimage2()" class="base fill" id="beyazEkranmini" style="margin-left:75px; border-width:0px;" >
+        <img class="fk" :src="image2" />
+        </button>
+
+   
+          </div>
+          <!--______________________________________________________________________________________________________-->
+           <!--___________________ ürün__________________________-->
+
+          <div style="width:15px; float:left; margin-left:45px; ">
+            <button @click="changeimage3()" class="base fill" id="beyazEkranmini" style="margin-left:95px; border-width:0px;" >
+        <img class="fk" :src="image3" />
+        </button>
+          
+          </div>
+          <!--______________________________________________________________________________________________________-->
+          <!--___________________ ürün__________________________-->
+
+          <div style="width:15px; float:left; margin-left:65px; ">
+        <button @click="changeimage4()" class="base fill" id="beyazEkranmini" style=" margin-left:95px; border-width:0px;" >
+        <img class="fk" :src="image4" />
+        </button>
+          
+          </div>
+          <!--______________________________________________________________________________________________________-->   
+         </template>    
+      </b-carousel-slide>
+
+    
+    
+    </b-carousel>
+
+        <!--_______minik görüntüler________
+        <button @click="changeimage1()" class="base fill" id="beyazEkranmini" style="float:left; margin-left:25px; border-width:0px;" >
+        <img class="fk" :src="image1" />
+        </button>
+
+        <button @click="changeimage2()" class="base fill" id="beyazEkranmini" style="float:left; border-width:0px;"  >
+        <img class="fk" :src="image2" />
+        </button>
+
+        <button @click="changeimage3()" class="base fill" id="beyazEkranmini" style="float:left; border-width:0px;" >
         <img class="fk" :src="image3" />
         </button>
 
-        <button @click="changeimage4()" class="base fill" id="beyazEkranmini" style="float:left"  >
+        <button @click="changeimage4()" class="base fill" id="beyazEkranmini" style="float:left; border-width:0px;"  >
         <img class="fk" :src="image4" />
         </button>
-
+-->
         </div>
         
         <!--__________________Bilgi Kısmı_________________________-->
@@ -64,18 +163,20 @@
 
              <div style=" width:500px; margin-left:50px; margin-top:220px; ">
              <button style=" background-color:white;
-            text-color:white; width:150px; height:60px; border-radius:50px; ">
+            text-color:white; width:150px; height:60px; border-radius:50px; border-color: rgb(245, 241, 241); border-width:1px;">
              <a><b style="font-size:25px"> - | 2 | + </b></a> 
             </button>
 
             <button style=" background-color:rgb(74, 19, 82);
             text-color:white;
-              width:200px; height:60px; border-radius:50px; ">
-             <a style="color:white;"> SEPETE EKLE </a> 
+              width:200px; height:60px; border-radius:50px; border-width:0px; margin-left:20px; padding-top:5px; ">
+             <a style="color:white;">
+                       <nuxt-link to="/Anasayfa/Sepetim" style="color:white;" >Sepete Ekle</nuxt-link>
+                </a> 
             </button>
 
             <button
-            style="  background-color:white; border: 1px solid rgb(74, 19, 82);
+            style=" margin-left:20px;  background-color:white; border: 1px solid rgb(74, 19, 82);
             text-color:white;
             width:60px; height:60px; border-radius:50px;">
              <a style="color: rgb(74, 19, 82);"><img src="../assets/image/kalp.svg"/></a>
@@ -84,6 +185,16 @@
 
 
      </div>
+      <div style="margin-top:510px; color:gray;">
+        Paylaş : <a style="color: rgb(74, 19, 82);"><img src="../assets/image/f.PNG"/></a>
+        <a style="color: rgb(74, 19, 82);"><img src="../assets/image/p.PNG"/></a>
+      </div>
+
+
+    
+
+
+
 
 
     </div>
@@ -204,7 +315,7 @@ background-position: right bottom;
     padding-top: 50px;
     width:1150px;
     height:650px;
-    background-color: rgb(217, 218, 219);
+    background-color: rgb(246, 247, 248);
 }
 
 

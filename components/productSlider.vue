@@ -6,7 +6,6 @@
       :interval="4000"
       controls
       indicators
-      background="pink"
       img-width="900"
       img-height="480"
       style="text-shadow: 1px 1px 2px #333; width:1500px;padding-left:150px;"
@@ -29,33 +28,42 @@
     </div>
 
 
+
           <div style="text-align:center; font-size:12px;"> Colgate Natural Extracts Aloe Vera Diş Eti Bakımı Diş Macunu </div>
           <div style="text-align:center; font-size:12px;">75 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>35</b>.00</div>
+          <div style="text-align:center;"><b>35</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">17.50 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
           <!--___________________ ürün__________________________-->
 
-          <div style="width:250px; height:400px; float:left; margin-left:20px; ">
+          <div style="width:250px; height:400px; float:left; margin-left:20px; " class="hover-overlay-container">
           <img
             class="d-block img-fluid w-100"
             src="https://www.gratis.com/ccstore/v1/images/?source=/file/v7788113077750413372/products/10236839_01.jpg&height=300&width=300"
             alt="image slot"
           >
+
+   <div class="overlay-btn-container">
+        <nuxt-link to="/Anasayfa/Urun" class="overlay-btn">Sepete Ekle</nuxt-link>
+    </div>
+
+
           <div style="text-align:center; font-size:12px;"> Simple Daily Skin Detox Arındırıcı Yüz Yıkama Jeli</div>
           <div style="text-align:center; font-size:12px;">150 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>40</b>.00</div>
+          <div style="text-align:center;"><b>48</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">20.00 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">20</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -70,11 +78,12 @@
           <div style="text-align:center; font-size:12px;"> Urban Care Twisted Curls Hibiscus & Shea Butter Durulanmayan Saç Bakım Kremi</div>
           <div style="text-align:center; font-size:12px;">175 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>6</b>.75</div>
+          <div style="text-align:center;"><b>50</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -89,11 +98,12 @@
           <div style="text-align:center; font-size:12px;"> Beaulis Shape it Transparan Kaş ve Kirpik Maskarası</div>
           <div style="text-align:center; font-size:12px;">175 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>18</b>.00</div>
+          <div style="text-align:center;"><b>80</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">9.00 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->   
@@ -114,11 +124,12 @@
           <div style="text-align:center; font-size:12px;">Dax Supergro Saç Bakım Yağı</div>
           <div style="text-align:center; font-size:12px;">198 gr</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>149</b>.00 TL</div>
+          <div style="text-align:center;"><b>25</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -133,11 +144,12 @@
           <div style="text-align:center; font-size:12px;"> Krauterhof Anti-Cellulite Jel</div>
           <div style="text-align:center; font-size:12px;">250 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>102</b>.25 TL</div>
+          <div style="text-align:center;"><b>18</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -152,11 +164,12 @@
           <div style="text-align:center; font-size:12px;">Revox At Kuyruğu Biotin&Collagen Şampuan</div>
           <div style="text-align:center; font-size:12px;">360 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>54</b>.50 TL</div>
+          <div style="text-align:center;"><b>24</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -171,11 +184,12 @@
           <div style="text-align:center; font-size:12px;">Zigavus 3 Katlı Lastikli Yüz Maskesi 50'li</div>
           <div style="text-align:center; font-size:12px;">175 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>17</b>.50 TL</div>
+          <div style="text-align:center;"><b>42</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->   
@@ -195,12 +209,12 @@
           <div style="text-align:center; font-size:12px;"> Life in Hindistan Cevizi Yapı</div>
           <div style="text-align:center; font-size:12px;">330 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>45</b>.00 TL</div>
-          <div style="text-align:center;"><b>45</b>.00 TL</div>
+          <div style="text-align:center;"><b>45</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">22.50 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -215,11 +229,12 @@
           <div style="text-align:center; font-size:12px;">Sensodyne Tam Koruma Beyazlatıcı Diş Macunu + Diş Fırcası</div>
           <div style="text-align:center; font-size:12px;">75 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>58</b>.</div>
+          <div style="text-align:center;"><b>55</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -234,11 +249,12 @@
           <div style="text-align:center; font-size:12px;"> Urban Care Twisted Curls Hibiscus & Shea Butter Durulanmayan Saç Bakım Kremi</div>
           <div style="text-align:center; font-size:12px;">175 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>6</b>.75</div>
+          <div style="text-align:center;"><b>5</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">3.25 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->
@@ -253,11 +269,12 @@
           <div style="text-align:center; font-size:12px;">Gilette Venus ConfortGlide Brerze Yedek Kadın Tıraş Bıçağı 4'lü Paket</div>
           <div style="text-align:center; font-size:12px;">175 ml</div>
           <div style="margin-left:7px; text-align:center; border-bottom:1px solid gray;width:230px;"><img :src="icon" style="width:15px; height:15px;">{{yorum}}</div>
-          <div style="text-align:center;"><b>104</b>.00 TL</div>
+          <div style="text-align:center;"><b>140</b><a style="font-size:10px;">,00</a></div>
           <div style="background-color:rgb(250, 213, 247); width:250px; height:45px; margin-bottom:0px;">
             <div style="float:left; margin-left:50px; padding-top:3px; width:50px; height:50px;font-size:12px;">Gratis Kart ile</div>
             <div style="float:left; padding:2px; width:50px; margin-top:5px; border-radius:5px; height:35px; background-color:rgb(223, 27, 206);; font-size:12px; color:white;">%<b style="font-size:20px; line-height:0.5px; padding-top:1px;">51</b><p>indirim</p></div>
-            <div style="float:left; padding-left:7px; padding-top:3px; margin-top:5px; ">85.00 TL</div>
+            <div style="font-size:25px; float:left; padding-left:7px; padding-top:3px; margin-top:2px; ">17</div>
+            <div style="font-size:12px; float:left;margin-top:12px; margin-left:2px;">,50 TL</div>
           </div>
           </div>
           <!--______________________________________________________________________________________________________-->   

@@ -1,35 +1,27 @@
 <template>
   <div>
-    <b-row>
-     
-      <b-col cols="12">
-        <div class="sepetbtn">
-         <sepet @addToCard="cardItems.push($event)" :product="product" v-for="product in productList" :key="product.id"/>
-        </div>
+
+  
         
          <div>
-          <b-dropdown  variant="link"  no-caret>
+          <b-dropdown  variant="link"  no-caret >
            <template #button-content>
-            <img src="../assets/image/sepetim.svg" style="width:20px">
+            <img src="../assets/image/sepetim.svg" style="width:30px">
           </template>
           <!-- aşağısı dropdown ın iç kısmı --->
-          <b-dropdown-item style="width:350px; margin:15px; ">
+          <b-dropdown-item style="width:350px; margin:15px; padding-right:50px; ">
             <!-- burası sepetin dropdown içinddeki slidebar kısmı--->
               <div>
                 <b-card no-body>
                    <b-card-body
-                
-     
+
                    style="position:relative; height:300px; overflow-y:scroll;"
                   >
                        
                           <ul style="list-style-type:none; margin-left:-30px;">
                             <div>
                             <li  class="icdiv" v-for="item in cardItems" :key="item.id">
-                                 <a><img :src="item.iconu"  style="width:80px; height:70px;
-                                 margin-top:10px;
-                               
-                                 margin-left:10px;"/></a>
+                                 <a><img :src="item.iconu"/></a>
                                  <label 
                                  style="margin-left:10px;"
                                  >Ürün Kodu:<p>{{item.Ukodu}}</p></label>
@@ -70,9 +62,11 @@
           </b-dropdown>
         </div>
          
-      </b-col>
-
-    </b-row>
+<!--
+        <div class="sepetbtn">
+         <sepet @addToCard="cardItems.push($event)" :product="product" v-for="product in productList" :key="product.id"/>
+        </div>
+  -->
   </div>
 </template>
 
@@ -110,11 +104,5 @@ export default {
 
 <style scoped>
 
-.icdiv{
-  margin-top:5px;
-  padding-left:0px;
-  border:1px solid;
-  height: 150px;
-  
-}
+
 </style>
