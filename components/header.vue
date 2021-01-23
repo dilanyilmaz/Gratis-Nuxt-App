@@ -76,6 +76,7 @@
 <script>
 import seperbtn from '../components/sepetbtn'
 export default{
+    name:'header',
     components:{seperbtn},
     data(){
         return{
@@ -91,12 +92,12 @@ export default{
               icon: require('../assets/image/b.webp')
             },
                         {
-              id:2,
+              id:3,
               title:"Mağazalarımız",
               icon: require('../assets/image/magaza.svg')
             },
             {
-              id:3,
+              id:4,
               title:"Yardım ve Destek",
               icon: require('../assets/image/help.svg')
             },

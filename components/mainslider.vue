@@ -42,19 +42,19 @@
               id:0,
               iconu: require('../assets/image/w1.webp')
             },
-                        {
+            {
               id:1,
               iconu: require('../assets/image/w2.webp')
             },
-                        {
+            {
               id:2,
               iconu: require('../assets/image/w3.webp')
             },
-                        {
+              {
               id:3,
               iconu: require('../assets/image/w4.webp')
             },
-                        {
+              {
               id:4,
               iconu: require('../assets/image/w5.webp')
             },

@@ -639,7 +639,7 @@
 export default {
     data(){
         return{
-            Makyaj:[
+           Makyaj:[
             'Göz ',
             'Maskara',
             'Göz Kalemi',

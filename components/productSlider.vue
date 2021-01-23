@@ -335,7 +335,6 @@
     data() {
       return {
 
-        icon: require('../assets/image/pen.svg'),
         yorum:"İlk Yorumu Sen Yap!"
       }
     }

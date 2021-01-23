@@ -69,7 +69,10 @@
 import {mapState , mapMutations} from "vuex";
 
 export default {
-
+    name:'uye',
+    authorize: () => {
+            return 'ruj';
+        },
     data(){  
         return{  
             email:"",
